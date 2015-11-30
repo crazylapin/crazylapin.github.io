@@ -9,21 +9,9 @@
 <script src="markdown.min.js"></script>
 <script type="text/javascript">
     $.get("readme.md", function(result){
-    $("div").html(result);
+    $("div").html(markdown.toHTML(result));
     });
 </script>
-
-    <script>
-      function Editor(input, preview) {
-        this.update = function () {
-          preview.innerHTML = markdown.toHTML(input.value);
-        };
-        input.editor = this;
-        this.update();
-      }
-      var $ = function (id) { return document.getElementById(id); };
-      new Editor($("text-input"), $("preview"));
-    </script>
 <div></div>
 
 </body>
