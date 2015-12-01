@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <title></title>
@@ -22,7 +22,7 @@ function getPar(par){
     var nextPar = get_par.indexOf("&");
     if(nextPar != -1){
         get_par = get_par.slice(0, nextPar);
-    }
+    
     return get_par;
 }
 $("div").html(getPar("tag"));
