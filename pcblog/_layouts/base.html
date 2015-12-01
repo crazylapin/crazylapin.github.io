@@ -1,0 +1,16 @@
+<html>
+<head>
+    {% include '_includes/head.html' %}
+    {% block head %}{% endblock %}
+</head>
+<body>
+    {% include '_includes/nav.html' %}
+    {% block content %}{% endblock %}
+
+    <div id="footer">
+    {% include '_includes/foot.html' %}
+    {% block foot %}{% endblock %}
+    </div>
+    
+</body>
+</html>
