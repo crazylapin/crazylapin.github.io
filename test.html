@@ -3,10 +3,10 @@
     <title>123</title>
 </head>
 <body>
-<div></div>
+
 <script src="jquery.js"></script>
 <script type="text/javascript">
-$("div").html("123");
+$("div").html(document.location.href);
 //获取 url get参数
 function getPar(par){
     //获取当前URL
@@ -27,6 +27,7 @@ function getPar(par){
 }
 //$("div").html(getPar("tag"));
 </script>
+<div></div>
 </body>
 </html>
 
